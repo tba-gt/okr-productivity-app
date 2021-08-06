@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hello Again.</h1>
+
+    <form action="/okrs" method="POST">
+        <input type="text" placeholder="Word" name="okr">
+        <button type="submit"> submit </button>
+    </form>
+
+    <h3> OKRs </h3>
+
+    <ul class="okrs">
+        <!-- Loop through quotes -->
+        <% for(var i = 0; i < okrs.length; i++) {%>
+          <li class="okr">
+            <!-- Output okr from the iterated okr object -->
+            <span><%= okrs[i].okr %></span>
+          </li>
+        <% } %>
+    </ul>
+
+    <div>
+        <button id="update-button">Replace Entry</button>
+
+    </div>
+
+    <script src="/main.js"></script>
+    <!-- automatically looks under ../public -->
+</body>
+</html>
