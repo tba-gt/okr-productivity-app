@@ -26,6 +26,13 @@ const Navbar = () => {
                 <NavLink to="/dashboard" activeStyle>
                     OKR Dashboard
                 </NavLink>
+                <NavLink to="/weeklyplan" activeStyle>
+                    Weekly Plan
+                </NavLink>
+                <NavLink to="/signin" activeStyle>
+                    Sign In
+                </NavLink>
+                <NavBtnLink to="/signup">Sign Up</NavBtnLink>      
             </NavMenu> 
            </Nav> 
         </>
